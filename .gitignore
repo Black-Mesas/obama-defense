@@ -1,0 +1,9 @@
+# Project place file
+/obama-defense.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+*.swp
+.DS_Store
