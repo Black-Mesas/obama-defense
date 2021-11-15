@@ -1,0 +1,3 @@
+local BossBar = {}
+
+return BossBar
