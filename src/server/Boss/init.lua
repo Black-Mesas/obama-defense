@@ -1,11 +1,8 @@
 local CollectionService = game:GetService("CollectionService")
 
-local Boss = {}
+local FetchHumanoid = require(script.Parent.Util.FetchHumanoid)
 
-local function FetchHumanoid(Model: Instance)
-    assert(Model:FindFirstChildOfClass("Humanoid"), "No humanoid found!")
-    return Model:FindFirstChildOfClass("Humanoid")
-end
+local Boss = {}
 
 -- FIXME: I would use metatables, but I want this code to be a bit easier to read
 function Boss.new(Model, ThoughtProcess)
