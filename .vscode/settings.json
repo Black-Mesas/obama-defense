@@ -1,0 +1,8 @@
+{
+	"standard.engine": "ts-standard",
+  "standard.autoFixOnSave": true,
+  "standard.treatErrorsAsWarnings": true,
+  "standard.usePackageJson": true,
+  "editor.tabSize": 2,
+	"typescript.tsdk": "node_modules/typescript/lib"
+}

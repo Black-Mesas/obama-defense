@@ -1,52 +1,51 @@
 {
-	"name": "obama-defense",
+	"name": "flamework-game",
+	"globIgnorePaths": [
+		"**/package.json",
+		"**/tsconfig.json"
+	],
 	"tree": {
 		"$className": "DataModel",
-
-		"ReplicatedStorage": {
-			"$className": "ReplicatedStorage",
-			"Common": {
-				"$path": "src/shared"
-			}
-		},
-
 		"ServerScriptService": {
 			"$className": "ServerScriptService",
-			"Server": {
-				"$path": "src/server"
+			"TS": {
+				"$path": "out/server"
 			}
 		},
-
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$path": "node_modules/@rbxts",
+					"@flamework": {
+						"$path": "node_modules/@flamework"
+					}
+				}
+			},
+			"TS": {
+				"$path": "out/shared"
+			}
+		},
 		"StarterPlayer": {
 			"$className": "StarterPlayer",
 			"StarterPlayerScripts": {
 				"$className": "StarterPlayerScripts",
-				"Client": {
-					"$path": "src/client"
+				"TS": {
+					"$path": "out/client"
 				}
 			}
 		},
-
 		"Workspace": {
 			"$className": "Workspace",
-			"$path": "models",
-			"$ignoreUnknownInstances": true,
 			"$properties": {
 				"FilteringEnabled": true
 			}
 		},
-		"Lighting": {
-			"$className": "Lighting",
+		"HttpService": {
+			"$className": "HttpService",
 			"$properties": {
-				"Ambient": [
-					0,
-					0,
-					0
-				],
-				"Brightness": 2,
-				"GlobalShadows": true,
-				"Outlines": false,
-				"Technology": "Voxel"
+				"HttpEnabled": true
 			}
 		},
 		"SoundService": {

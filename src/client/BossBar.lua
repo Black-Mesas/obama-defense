@@ -1,3 +1,0 @@
-local BossBar = {}
-
-return BossBar

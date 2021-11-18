@@ -1,11 +1,5 @@
-# Project place file
-# /obama-defense.rbxlx
-/*.rbxlx
-/*.rbxl
-
-# Roblox Studio lock files
-/*.rbxlx.lock
-/*.rbxl.lock
-
-*.swp
-.DS_Store
+/node_modules
+/out
+/include
+*.tsbuildinfo
+flamework.build
