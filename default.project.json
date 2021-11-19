@@ -40,6 +40,9 @@
 			"$className": "Workspace",
 			"$properties": {
 				"FilteringEnabled": true
+			},
+			"workspace": {
+				"$path": "workspace"
 			}
 		},
 		"HttpService": {
